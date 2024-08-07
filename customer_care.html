@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/header+summer-section.css">
+<link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<title>Customer Care - Borcelle & Spies</title>
+<style>
+    body {
+        font-family: 'Poppins';
+        margin: 0;
+        padding: 0;
+        background-color: #f5ebe0;
+    }
+    .showcase {
+        background: url('customer-care.jpg') no-repeat center center/cover;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #bc6c25;
+        text-align: center;
+    }
+    .showcase h1 {
+        font-family: 'Dancing Script';
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    .showcase p {
+        font-size: 24px;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+    .info {
+        margin-bottom: 30px;
+    }
+    .info h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .info p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .faq {
+        margin-bottom: 20px;
+    }
+    .faq p {
+        margin: 5px 0;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form input, .contact-form textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .contact-form button {
+        padding: 15px;
+        background: #3498db;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background 0.3s;
+    }
+    .contact-form button:hover {
+        background: #2980b9;
+    }
+</style>
+</head>
+<body>
+
+    <header class="header-section">
+        <div class="navbar">               
+            <nav class="left-section">
+                <a href="home.html"><img src="images/Borcelle.png" class="logo"></a>
+                <ul class="nav">
+                        <li class="nav-li"><a href="home.html">Home</a></li>
+                        <li class="nav-li"><a href="">Categories<span class="material-symbols-outlined">
+                                 chevron_right
+                            </span></a>
+                        <ul class="dropdown">
+                            <li class="dropdown-li"><a href="causal.html">Causal Wear</a></li>
+                            <li class="dropdown-li"><a href="formal.html">Formal Wear</a></li>
+                            <li class="dropdown-li"><a href="summer.html">Summer Collection</a></li>
+                            <li class="dropdown-li"><a href="winter.html">Winter Collection</a></li>
+                            <li class="dropdown-li"><a href="accessories.html">Accessories</a></li>
+                        </ul></li>
+                        <li class="nav-li"><a href="men.html">Men</a></li>
+                        <li class="nav-li"><a href="women.html">Women</a></li>
+                </ul>
+            </nav>
+            <div class="right-section">
+                <div class="search-bar"> 
+                    <div class="search">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                     <div class="search-tooltip">Search</div>
+                    </div>
+                         <input type="text" placeholder="Search products">
+                    <div class="mic">
+                     <i class="fa-solid fa-microphone"></i>
+                     <div class="mic-tooltip">Search with your voice</div>
+                    </div>
+                     </div>
+                <div class="cart">
+                    <span class="material-symbols-outlined">
+                        shopping_cart_checkout
+                        </span>
+                    <div class="cart-tooltip">Add to Cart</div>
+                </div>
+                <div class="user">
+                    <a href="Login_Register/login.php"><span class="material-symbols-outlined">
+                        account_circle
+                        </span></a>
+                    <div class="user-tooltip">Your Account</div>
+                </div>
+            </div>
+        </div>
+</header>
+
+<section class="showcase">
+    <div>
+        <h1>Customer Care</h1>
+        <p>We're here to help you</p>
+    </div>
+</section>
+
+<div class="container">
+    <article class="info">
+        <h2>Contact Us Through</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </article>
+    <article class="info">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <p><strong>Q: How do I track my order?</strong></p>
+            <p>A: You can track your order by logging into your account and visiting the "Track Your Order" section.</p>
+        </div>
+        <div class="faq">
+            <p><strong>Q: What is your return policy?</strong></p>
+            <p>A: We offer a 30-day return policy for all items. Please visit our Return Policy page for more details.</p>
+        </div>
+        <div class="faq">
+            <p><strong>Q: How do I contact customer support?</strong></p>
+            <p>A: You can contact our customer support team by filling out the form above, emailing us at brocellespies@gmail.com, or calling us at +977-9805499729.</p>
+        </div>
+    </article>
+    <article class="info">
+        <h2>Shipping Information</h2>
+        <p>We offer free standard shipping on all orders over $50. Expedited shipping options are available at checkout. Please visit our Shipping Information page for more details.</p>
+    </article>
+    <article class="info">
+        <h2>Returns & Exchanges</h2>
+        <p>If you are not completely satisfied with your purchase, you may return it within 30 days of the purchase date. Items must be in their original condition and packaging. Please visit our Returns & Exchanges page for more details.</p>
+    </article>
+</div>
+<footer class="footer">
+    <div class="products">
+        <div class="product-title">Products &colon;</div>
+        <ul>
+            <li><a href="causal.html">Casual Wear</a></li>
+            <li><a href="formal.html">Formal Wear</a></li>
+            <li><a href="summer.html">Summer Collection</a></li>
+            <li><a href="winter.html">Winter Collection</a></li>
+            <li><a href="men.html">Men's Wear</a></li>
+            <li><a href="women.html">Women's Wear</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+    </div>
+     <div class="services">
+        <div class="service-title">Services &colon;</div>
+        <ul>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="">Shipping</a></li>
+            <li><a href="">Track Your Order</a></li>
+            <li><a href="">Returns</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="customer_care.html">Customer Care</a></li>
+        </ul>
+    </div>
+    <div class="follow-us">
+        <div class="follow-us-title">Follow Us On &colon;</div>
+        <a href="https://www.facebook.com/"><div class="facebook"><i class="fa-brands fa-facebook"></i></div></a>
+        <a href="https://www.instagram.com/"><div class="instagram"><i class="fa-brands fa-instagram"></i></div></a>
+        <a href="https://twitter.com/"><div class="twitter"><i class="fa-brands fa-square-twitter"></i></div></a>
+        <a href="https://www.linkedin.com/"><div class="linkedin"><i class="fa-brands fa-linkedin"></i></div></a>
+
+        <div class="contact-us">
+            <div class="contact-us-title">Contact Us &colon;</div>
+            <a href="#"><i class="fa-solid fa-phone"></i><span>+977-9805499729</span></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i><span>brocellespies@gmail.com</span></a>
+            <a href="#"><i class="fa-solid fa-location-dot"></i><span>Butwal-11, Devinagar, Rupandehi, Nepal</span></a>
+        </div>
+    </div>
+    </footer>
+<!-- <footer>
+    <p>ShopEase &copy; 2024. All Rights Reserved.</p>
+</footer> -->
+
+</body>
+</html>

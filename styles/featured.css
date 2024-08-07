@@ -1,0 +1,80 @@
+.f-cover  {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;  
+}
+
+/* Featured Section */
+.featured-title {
+    font-family: 'Dancing Script';
+    font-size: 47px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+.featured .content {
+    display: flex;
+    font-family: 'Noticia Text';
+}
+.featured a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.featured  .item-1, .item-2, .item-3, .item-4 {
+    height: 500px;
+    width: 303px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.featured  .item-1 img, .item-2 img, .item-3 img, .item-4 img {
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+}
+.featured  .item-1 .title, .item-2 .title, .item-3 .title, .item-4 .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Features Section */
+.features {
+    width: 1210px;
+    height: 205px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Lato';
+}
+.features .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.features .shipping, .quality, .offers, .secure-payment {
+    padding: 20px;
+    width: 260px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features img {
+    width: 52px;
+    height: 52px;
+}
+.shipping .title, .quality .title, .offers .title, .secure-payment .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shipping .description, .quality .description, .offers .description, .secure-payment .description {
+    font-size: 18px;
+    text-align: center;
+}

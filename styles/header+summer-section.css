@@ -1,0 +1,215 @@
+ * {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     list-style: none;
+ }
+ 
+ /*-------------------------------------------Header Section ------------------------------------------------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 5px #0f5b8a;
+    font-family: 'Noticia Text';
+    background-color: #2b7dac;
+}
+.left-section {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar .logo {
+    object-fit: contain;
+    cursor: pointer;
+    width: 20vh;
+    height: 12vh;
+}
+.nav {
+    font-size: 21px;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+.nav .nav-li a {
+    border-radius: 20px;
+    padding: 1px 4px 2px 4px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+.nav .nav-li a:hover {
+    color: black;
+    background-color: #fff;
+}
+.nav .dropdown {
+    display: none;
+    position: absolute;
+    padding: 0;
+    line-height: 19px;
+}
+.nav .dropdown .dropdown-li {
+    padding: 4px;
+}
+.nav .nav-li:hover .dropdown {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 93px;
+    border-radius: 6px;
+    background-color: #2b7dac;
+    padding: 4px;
+    font-size: 17px;
+    box-shadow: 1.2px 1.2px 5px #064f7c;
+    z-index: 10;
+}
+.dropdown a:hover {
+    background-color: white;
+    border-radius: 20px;
+}
+.dropdown .dropdown-li a {
+    color: white;
+}
+.right-section, .search-bar, .cart, .user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+    gap: 30px;
+}
+.nav-li .material-symbols-outlined {
+    font-size: 18px;
+    transform: rotate(0deg);
+    transition: 0.25s;
+    vertical-align: middle;
+}
+.nav-li:hover .material-symbols-outlined {
+    transform: rotate(90deg);
+}
+.right-section .search-bar {
+    border-radius: 25px;
+    box-shadow:  0px 0px 5px white;
+    padding-right: 12px;
+    padding-left: 12px;
+    background-color: white;
+}
+.search-bar input {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+.search-bar .fa-magnifying-glass, .fa-microphone {
+    font-size: 15px;
+    color: rgb(50, 50, 243);
+    cursor: pointer;
+}
+.right-section .search, .mic, .cart, .user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-section .search-tooltip, .mic-tooltip, .cart-tooltip, .right-section .user-tooltip {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    top: 48px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    z-index: 10;
+}
+.right-section .search:hover .search-tooltip, .mic:hover .mic-tooltip, .cart:hover .cart-tooltip, .user:hover .user-tooltip  {
+    opacity: 1;
+}
+.right-section .material-symbols-outlined {
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    padding: 6px;
+    transition: all 0.4s ease-in-out;
+}
+.right-section .material-symbols-outlined:hover {
+    color: black;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+/* -----------------------------------------------------------------------Styles for Summer Section---------------------------------------------------------------------------- */
+.header-summer-section {
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: contain;
+    background: url(../images/bg1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.header-summer-section .summer-section {
+    width: 600px;
+    height: 313px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+    left: 20vh;
+    top: 20vh;
+}
+.header-summer-section .summer-section h1 {
+    font-size: 66px;
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.header-summer-section .summer-section h3 {
+    font-size: 26px;
+    font-family: 'Noticia Text';
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.header-summer-section .btn .shop-now {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 14px 16px;
+    border: 0.8px solid white;
+    background: linear-gradient(to bottom,white 50%, rgb(0, 132, 214)  50%);
+    transition: background-position 0.4s ease-in-out, color 0.4s ease-in-out;
+    background-size: 100% 200%;
+    background-position: 100% 0;
+}
+.header-summer-section .btn .shop-now:hover {
+    background-position: 0 100%;
+    color: white;
+}
+.header-summer-section .btn .explore {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 14px 16px;
+    border: 0.8px solid white;
+    color: white;
+    transition: 0.4s;
+    margin-left: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom,rgb(0, 132, 214) 50%, white 50%);
+    transition: background-position 0.4s ease-in-out, color 0.4s ease-in-out;
+    background-size: 100% 200%;
+    background-position: 100% 0;
+}
+.header-summer-section .btn .explore:hover {
+    background-position: 0 100%;
+    color: black;
+}

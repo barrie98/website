@@ -1,0 +1,51 @@
+/* ----------------------------------------------------------Footer Section-------------------------------------------------------------- */
+.footer {
+    height: 220px;
+    background-color: rgb(34, 34, 34);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    font-family: 'Noticia Text';
+}
+
+.products, .services, .follow-us {
+    color: white;
+    margin-left: 20px;
+}
+.products .product-title, .services .service-title, .follow-us-title, .contact-us-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.follow-us-title, .contact-us-title {
+    font-style: italic;
+}
+.products a, .services a, .follow-us a  {
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+}
+.products a:hover, .services a:hover, .follow-us a:hover {
+    color: #e9c46a;
+}
+.follow-us .facebook, .instagram, .twitter, .linkedin {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+.follow-us {
+    color: white;
+}
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact-us .fa-solid {
+    font-size: 20px;
+    margin-right: 15px;
+}
+.contact-us span {
+    font-size: 15px;
+}

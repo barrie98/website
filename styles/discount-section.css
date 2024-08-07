@@ -1,0 +1,71 @@
+.discount-section-title {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+.discount-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 90px;
+}
+.discount-section .item {
+    width: 266px;
+    height: 400px;
+    padding: 0.5px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 133px 133px 0 0;
+    border: 3px solid #780000;
+}
+.discount-section .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.discount-section .item-name, .item-price {
+    font-size: 20px;
+}
+.discount-section .img-1, .img-2, .img-3, .img-4 {
+    height: 400px;
+    width: 266px;
+    border-radius: 133px 133px 0 0;
+}
+.discount-section .i1 button, .i2 button, .i3 button, .i4 button {
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6f1d1b;
+    border-radius: 5px;
+    width: 200px;
+    position: absolute;
+    bottom: -12%;
+    left: 12%;
+    cursor: pointer;
+    transition: bottom 0.3s ease-in-out, background-position 0.4s ease-in-out, color 0.4s ease-in-out;;
+    background: linear-gradient(to bottom,#f8f9fa 50%, #6f1d1b 50%);
+    background-size: 100% 200%;
+    background-position: 100% 0;
+}
+.discount-section .item:hover button  {
+    bottom: 2%;
+}
+.discount-section button:hover {
+    background-position: 0 100%;
+    color: #fff;
+}
+.discount-section .item-name, .item-price {
+    font-family: 'Lancelot';
+    text-align: center;
+    font-size: 25px;
+}
+.discount-section span {
+    text-decoration: line-through;
+}
